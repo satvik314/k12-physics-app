@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbit — Physics you can play with</title>
+    <meta name="description" content="Interactive physics labs for grades 8–12. Predict, experiment and prove: projectile motion, energy conservation and wave interference, all playable in your browser." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Orbit home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Orbit</span>
+        </a>
+        <nav class="nav-links" aria-label="Labs">
+          <a href="#lab-projectile">Projectiles</a>
+          <a href="#lab-energy">Energy</a>
+          <a href="#lab-waves">Waves</a>
+          <a href="#how">How it works</a>
+        </nav>
+        <a class="btn btn-primary btn-sm" href="#lab-projectile">Try a lab</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas class="hero-bg" id="hero-bg" aria-hidden="true"></canvas>
+        <div class="container hero-inner">
+          <p class="eyebrow reveal">For grades 8–12 · Three free labs below</p>
+          <h1 class="reveal">Physics you can <span class="grad">play with</span>.</h1>
+          <p class="lead reveal">
+            Formulas should be the last step, not the first. Orbit turns every concept into an interactive lab where
+            students predict, experiment and prove the idea for themselves. Then the equation finally makes sense.
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary btn-lg" href="#lab-projectile">Start the first lab ↓</a>
+            <a class="btn btn-ghost btn-lg" href="#how">How it works</a>
+          </div>
+          <div class="lab-cards reveal">
+            <a class="lab-card" href="#lab-projectile">
+              <span class="lab-card-num">01</span>
+              <span class="lab-card-icon" aria-hidden="true">🎯</span>
+              <span class="lab-card-title">Projectile Motion</span>
+              <span class="lab-card-sub">Aim a cannon, freeze the ball mid-air, hit a target.</span>
+            </a>
+            <a class="lab-card" href="#lab-energy">
+              <span class="lab-card-num">02</span>
+              <span class="lab-card-icon" aria-hidden="true">🛹</span>
+              <span class="lab-card-title">Energy Conservation</span>
+              <span class="lab-card-sub">Drop a skater into a half-pipe and watch energy change shape.</span>
+            </a>
+            <a class="lab-card" href="#lab-waves">
+              <span class="lab-card-num">03</span>
+              <span class="lab-card-icon" aria-hidden="true">🌊</span>
+              <span class="lab-card-title">Waves &amp; Interference</span>
+              <span class="lab-card-sub">Add two waves together and build a noise-cancelling headphone.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="how" id="how">
+        <div class="container">
+          <p class="eyebrow reveal">How every lab works</p>
+          <h2 class="reveal">Predict. Play. Prove.</h2>
+          <div class="how-grid">
+            <div class="how-card reveal">
+              <span class="how-step">1</span>
+              <h3>Predict</h3>
+              <p>Before anything moves, students commit to a guess. Being wrong out loud is where the learning starts.</p>
+            </div>
+            <div class="how-card reveal">
+              <span class="how-step">2</span>
+              <h3>Play</h3>
+              <p>Drag, launch, tune. Every lab is a real simulation that reacts instantly, with the numbers shown live.</p>
+            </div>
+            <div class="how-card reveal">
+              <span class="how-step">3</span>
+              <h3>Prove</h3>
+              <p>Each lab ends with a challenge you can only pass if you understood the idea. Only then do we show the formula.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab" id="lab-projectile">
+        <div class="container">
+          <div class="lab-head reveal">
+            <span class="lab-tag">Lab 01 · Mechanics · ~6 min</span>
+            <h2>Projectile Motion</h2>
+            <p>Why does a thrown ball curve? Split its motion into two simple pieces, catch it at the top of its flight, then use what you learned to hit a target.</p>
+          </div>
+          <div class="lab-body" data-lab="projectile"></div>
+        </div>
+      </section>
+
+      <section class="lab lab-alt" id="lab-energy">
+        <div class="container">
+          <div class="lab-head reveal">
+            <span class="lab-tag">Lab 02 · Energy · ~6 min</span>
+            <h2>Conservation of Energy</h2>
+            <p>Energy never disappears, it only changes form. Drop a skater into a half-pipe, find out what it takes to clear a hill, and see where the energy goes when friction shows up.</p>
+          </div>
+          <div class="lab-body" data-lab="energy"></div>
+        </div>
+      </section>
+
+      <section class="lab" id="lab-waves">
+        <div class="container">
+          <div class="lab-head reveal">
+            <span class="lab-tag">Lab 03 · Waves · ~7 min</span>
+            <h2>Waves &amp; Superposition</h2>
+            <p>Two waves in the same place simply add. From that one rule come loud spots, silent spots, beats, standing waves and the noise-cancelling headphones you build at the end.</p>
+          </div>
+          <div class="lab-body" data-lab="waves"></div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="container cta-inner reveal">
+          <p class="eyebrow">Coming next</p>
+          <h2>The whole syllabus, one lab at a time.</h2>
+          <div class="chips" aria-label="Upcoming labs">
+            <span class="chip-static">Circular motion &amp; orbits</span>
+            <span class="chip-static">Momentum &amp; collisions</span>
+            <span class="chip-static">Electric fields</span>
+            <span class="chip-static">Optics &amp; lenses</span>
+            <span class="chip-static">Simple harmonic motion</span>
+            <span class="chip-static">Thermodynamics</span>
+          </div>
+          <form class="signup" id="signup" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" type="email" name="email" placeholder="you@school.edu" required />
+            <button class="btn btn-primary" type="submit">Get early access</button>
+          </form>
+          <p class="signup-note" id="signup-note">Teachers and parents welcome. No spam, just new labs.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Orbit. Made with curiosity.</span>
+        <span>Every simulation on this page runs in your browser, no downloads.</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
